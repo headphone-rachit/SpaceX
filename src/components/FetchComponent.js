@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import { CardBody, Card, CardTitle, CardText, Row, Col } from 'reactstrap'
+import {  CardBody, Card, CardTitle, CardText, Row, Col } from 'reactstrap'
+import { Button } from "bootstrap";
 
 
 class FetchLaunchPads extends Component {
@@ -51,7 +52,7 @@ function LaunchPadsDisplay({ launchpads }) {
 
 
     return (
-        <div className="container"><h1 className="text-center pb-5 pt-5" style={{color:"#ffffff"}}>LaunchPads</h1>
+        <div className="container"><h1 className="text-center pb-5 pt-5" style={{color:"#ffffff",fontSize:"4rem"}}>LaunchPads</h1>
             <Row>
                 {launchpads.map((launchpad) => {
                     return (
