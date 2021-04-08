@@ -52,16 +52,16 @@ function LaunchPadsDisplay({ launchpads }) {
 
 
     return (
-        <div className="container"><h1 className="text-center pb-5 pt-5" style={{color:"#ffffff",fontSize:"4rem"}}>LaunchPads</h1>
+        <div className="container"><h1 className="text-center pb-5 pt-5 roboto_font" style={{color:"#ffffff",fontSize:"4rem"}}>LaunchPads</h1>
             <Row>
                 {launchpads.map((launchpad) => {
                     return (
                         <Col key={launchpad.id} md={3} className="col-12 col-md-4">
                             <Card className="mb-4" style={{backgroundColor:"#ffe666",height:"95%"}}>
                                 <CardBody>
-                                    <CardTitle><h3 className="text-center mb-3" >{launchpad.name}</h3></CardTitle>
-                                    <CardText><h5>Details</h5>
-                                        <ul>
+                                    <CardTitle><h3 className="text-center mb-3 roboto_font" >{launchpad.name}</h3></CardTitle>
+                                    <CardText ><h5 className="roboto-font">Details</h5>
+                                        <ul className="font-link">
                                             <li>
                                                 <strong>Region</strong>: {launchpad.region}
                                             </li>
@@ -85,9 +85,9 @@ function LaunchPadsDisplay({ launchpads }) {
                                             </li>
                                         </ul>
                                     </CardText>
-                                    <CardText><strong>Status:</strong> {launchpad.status}</CardText>
+                                    <CardText className="roboto-font"><strong>Status:</strong> {launchpad.status}</CardText>
 
-                                    <CardText><strong>Launches</strong>
+                                    <CardText className="roboto-font"><strong>Launches</strong>
                                         <ul>
                                             {launchpad.launches.length == 0 ? <li>No Launches Available</li> : <span>{launchpad.launches.slice(0, 3).map((launch) => {
 

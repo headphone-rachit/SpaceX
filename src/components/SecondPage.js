@@ -52,11 +52,11 @@ function DisplayLaunch({ launch }) {
         <Row className="pt-3" >
             <Col key={launch.id} md={{ size: 4, offset: 4 }} >
                 <Card style={{backgroundColor:"#89f5c8", color:"#000000"}} >
-                    <h2 className="text-center">Launch</h2>
+                    <h2 className="text-center mt-3">Launch</h2>
                     <CardBody className="m-3 mr-5 ">
-                        <CardTitle className=" mb-4"><h3>Name : {launch.name}</h3></CardTitle>
-                        <CardText className=" mb-5"><h5>Details</h5>
-                            <ul  >
+                        <CardTitle className=" mb-4 roboto-font"><h3>Name : {launch.name}</h3></CardTitle>
+                        <CardText className=" mb-5"><h5 className="roboto-font">Details</h5>
+                            <ul className="font-link" >
                                 <li>
                                 <strong>Info :</strong> {launch.details==null?<span>No Details</span>:<span>{launch.details}</span>}
                                 </li>

@@ -6,3 +6,11 @@
 #launchDetails{
   background-color: gray;
 }
+
+.font-link{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.roboto_font{
+  font-family: 'Roboto Mono', monospace;
+}
