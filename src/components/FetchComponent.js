@@ -55,8 +55,8 @@ function LaunchPadsDisplay({ launchpads }) {
             <Row>
                 {launchpads.map((launchpad) => {
                     return (
-                        <Col key={launchpad.id} md={3} className="col-12 col-md-4" >
-                            <Card className="mb-4" style={{backgroundColor:"#ffe666"}}>
+                        <Col key={launchpad.id} md={3} className="col-12 col-md-4">
+                            <Card className="mb-4" style={{backgroundColor:"#ffe666",height:"95%"}}>
                                 <CardBody>
                                     <CardTitle><h3 className="text-center mb-3" >{launchpad.name}</h3></CardTitle>
                                     <CardText><h5>Details</h5>
